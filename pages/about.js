@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+// import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function About() {
   return (
@@ -11,10 +11,27 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="This is a Next JS Course" />
       </Head>
-      <h1>About</h1>
-      <p>
-        This is the about page.
-      </p>
+      <h1
+        style={{
+          color: "red",
+        }}
+      >
+        About
+      </h1>
+      <p>This is the about page.</p>
+      <img src="/img/goku.png" />
+      <style jsx>
+        {`
+          body {
+            background: yellow;
+            color: black;
+          }
+          h1 {
+            font-family: sans-serif;
+            font-size: 3rem;
+          }
+        `}
+      </style>
     </div>
   );
 }
